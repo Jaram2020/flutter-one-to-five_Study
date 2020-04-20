@@ -15,41 +15,53 @@ class MyApp extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Column(
-                      children: <Widget>[
-                        Image.asset(
-                          'images/example.png',
-                          height: 500,
-                        ),
-                        Text("Jaram 1"),
-                      ],
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.black,
+                        borderRadius: BorderRadius.circular(20.0),
+                      ),
+                      margin: EdgeInsets.all(16.0),
+                      // color: Colors.black,
+                      child: Column(
+                        children: <Widget>[
+                          Image.asset(
+                            'images/example.png',
+                            height: 500,
+                          ),
+                          Text(
+                            "Jaram 1",
+                            style: TextStyle(
+                              fontFamily: 'BlackHanSans',
+                              color: Colors.white,
+                              fontSize: 35,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
-                    Column(
-                      children: <Widget>[
-                        Image.asset(
-                          'images/example.png',
-                          height: 500,
-                        ),
-                        Text("Jaram 2"),
-                      ],
-                    ),
-                    Column(
-                      children: <Widget>[
-                        Image.asset(
-                          'images/example.png',
-                          height: 500,
-                        ),
-                        Text("Jaram 3"),
-                      ],
-                    ),
-                    Column(
-                      children: <Widget>[
-                        Image.asset(
-                          'images/example.png',
-                          height: 500,
-                        ),
-                        Text("Jaram 4"),
-                      ],
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.black,
+                        borderRadius: BorderRadius.circular(20.0),
+                      ),
+                      margin: EdgeInsets.fromLTRB(16.0, 0, 16.0, 16.0),
+                      // color: Colors.black,
+                      child: Column(
+                        children: <Widget>[
+                          Image.asset(
+                            'images/example.png',
+                            height: 500,
+                          ),
+                          Text(
+                            "Jaram 2",
+                            style: TextStyle(
+                              fontFamily: 'BlackHanSans',
+                              color: Colors.white,
+                              fontSize: 35,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ],
                 ),
