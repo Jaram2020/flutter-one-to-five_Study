@@ -7,11 +7,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        backgroundColor: Colors.red,
-        body: Container(
-          color: Colors.green,
-        ),
+      home: SafeArea(
+        child: Scaffold(
+            backgroundColor: Colors.white,
+            body: Image.asset(
+              'images/example.png',
+              height: 200,
+            )),
       ),
     );
   }
