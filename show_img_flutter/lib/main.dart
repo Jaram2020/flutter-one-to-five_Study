@@ -10,9 +10,50 @@ class MyApp extends StatelessWidget {
       home: SafeArea(
         child: Scaffold(
             backgroundColor: Colors.white,
-            body: Image.asset(
-              'images/example.png',
-              height: 200,
+            body: SingleChildScrollView(
+              child: Center(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Column(
+                      children: <Widget>[
+                        Image.asset(
+                          'images/example.png',
+                          height: 500,
+                        ),
+                        Text("Jaram 1"),
+                      ],
+                    ),
+                    Column(
+                      children: <Widget>[
+                        Image.asset(
+                          'images/example.png',
+                          height: 500,
+                        ),
+                        Text("Jaram 2"),
+                      ],
+                    ),
+                    Column(
+                      children: <Widget>[
+                        Image.asset(
+                          'images/example.png',
+                          height: 500,
+                        ),
+                        Text("Jaram 3"),
+                      ],
+                    ),
+                    Column(
+                      children: <Widget>[
+                        Image.asset(
+                          'images/example.png',
+                          height: 500,
+                        ),
+                        Text("Jaram 4"),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
             )),
       ),
     );
